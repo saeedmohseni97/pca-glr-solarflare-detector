@@ -41,10 +41,10 @@ The goal is to detect **sudden flare events** by analyzing the video as a high-d
 ```
 📁 code/
   ├── main.m                  # Entry point for simulation
-  └─ functions/              # All helper and core functions
+  └─ functions/               # All helper and core functions
 📁 dataset/
-  ├── original.mp4   # Raw NASA solar flare videos
-  └─ zoom_in_video.mp4
+  ├── original.mp4            # Raw NASA solar flare videos
+  └─ zoom_in_video.mp4        # Zoomed-in version 
 📄 README.md
 ```
 
