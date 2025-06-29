@@ -4,8 +4,8 @@ clear;clc;
 addpath('functions')
 currentScriptPath = mfilename('fullpath');
 [currentDir, ~, ~] = fileparts(currentScriptPath);
-datasetPath1 = fullfile(currentDir, '..', 'Dataset', 'final_11.mp4');
-datasetPath2 = fullfile(currentDir, '..', 'Dataset', 'Solar Flare-1.mp4');
+datasetPath1 = fullfile(currentDir, '..', 'Dataset', 'zoom_in_video.mp4');
+datasetPath2 = fullfile(currentDir, '..', 'Dataset', 'original.mp4');
 training_sample_num = 100;   win_size = 50;
 M = 100; ET = 5000; iteration = 50; temp = 0;
 %% Reading Data :

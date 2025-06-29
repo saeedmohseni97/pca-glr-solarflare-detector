@@ -91,12 +91,6 @@ _EURASIP Journal on Advances in Signal Processing_, 2019(42).
 
 ---
 
-## 📎 License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
----
-
 ## 👨‍💻 Author
 
 **Saeed Mohseni seh deh**  
