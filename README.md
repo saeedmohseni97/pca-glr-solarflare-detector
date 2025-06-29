@@ -24,13 +24,12 @@ The original paper proposes using **random linear sketching** to reduce data dim
 The dataset is a **NASA solar observatory camera video**, showing the sun's surface over time.  
 The goal is to detect **sudden flare events** by analyzing the video as a high-dimensional time series.
 
-> 📉 PCA significantly improves detection by reducing noise and correlating spatial features before applying the sketch-based detector.
-
+> 📉 PCA significantly improves the Gaussian assumption used in the genralized likelihood ratio (GLR) test formulation.
 ---
 
 ## 🛠 Features
 
-- ✅ Implements GLR-based change-point detection on sketch-transformed data  
+- ✅ Implements GLR-based change-point detection on sketched data  
 - ✅ Uses PCA to enhance signal Gaussianity and reduce dimensionality  
 - ✅ Works on real NASA solar camera video  
 - ✅ Clean, modular MATLAB code
@@ -42,9 +41,10 @@ The goal is to detect **sudden flare events** by analyzing the video as a high-d
 ```
 📁 code/
   ├── main.m                  # Entry point for simulation
-  └── functions/              # All helper and core functions
+  └─ functions/              # All helper and core functions
 📁 dataset/
-  └── solar_flare_video.mp4   # Raw NASA solar flare video
+  ├── original.mp4   # Raw NASA solar flare videos
+  └─ zoom_in_video.mp4
 📄 README.md
 ```
 
@@ -54,7 +54,7 @@ The goal is to detect **sudden flare events** by analyzing the video as a high-d
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/your-username/solarflare-pca-change-detection.git
+   git clone https://github.com/saeedmohseni97/solarflare-pca-change-detection.git
    cd solarflare-pca-change-detection
    ```
 
@@ -71,9 +71,7 @@ The goal is to detect **sudden flare events** by analyzing the video as a high-d
 
 ## 📈 Results
 
-- Faster and more stable detection compared to raw sketching
 - PCA preprocessing yielded lower variance in detection delay
-- Enhanced robustness to non-Gaussian noise in real-world video
 
 ---
 
@@ -99,9 +97,17 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙋‍♂️ About Me
+## 👨‍💻 Author
 
-I'm a graduate student passionate about signal processing, applied ML, and scientific computing.  
-Open to research internships in data-driven modeling, detection theory, or AI systems!
+**Saeed Mohseni seh deh**  
+Graduate Researcher  
+Institute for Advanced Computing, Virginia Tech, VA, USA  
+🌐 [My Website](https://saeedmohseni.netlify.app/) | 📫 saeedmohseni@vt.edu
 
-[🔗 My Portfolio Website](https://yourname.github.io) | [📬 Contact Me](mailto:your.email@domain.com)
+---
+
+## 🌟 If you like this project...
+
+- ⭐ Star the repository
+- 🍴 Fork it
+- 🧠 Discuss ideas or improvements
